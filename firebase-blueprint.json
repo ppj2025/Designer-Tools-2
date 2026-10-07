@@ -1,0 +1,43 @@
+{
+  "entities": {
+    "userProfile": {
+      "title": "UserProfile",
+      "description": "User profile with Google account information",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "lastSeen": { "type": "number" }
+      },
+      "required": ["uid", "email"]
+    },
+    "collaborationPresence": {
+      "title": "CollaborationPresence",
+      "description": "Realtime designer presence and cursor on InfiniteCanvas",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "avatar": { "type": "string" },
+        "color": { "type": "string" },
+        "x": { "type": "number" },
+        "y": { "type": "number" },
+        "lastActive": { "type": "number" }
+      },
+      "required": ["userId", "x", "y"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "userProfile",
+      "description": "Registered Google user profiles"
+    },
+    "/presences/{presenceId}": {
+      "schema": "collaborationPresence",
+      "description": "Realtime designer collaborative cursors and locations"
+    }
+  }
+}

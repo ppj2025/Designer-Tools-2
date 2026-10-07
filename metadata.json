@@ -1,0 +1,6 @@
+{
+  "name": "小庞AI加油站",
+  "description": "小庞AI加油站 - 桌面端与云端全能 AI 智能创意工作站，支持百万级长上下文多轮问答、表格数据联动分析、文生图与无限画布深度协同、4路 UI 资产自动抠图切片与序列重命名，集成 trueai-org/midjourney-proxy 开源绘图专线右侧栏工作台（支持 Imagine、Blend、Describe、Shorten 及 4 宫格 U/V 衍生交互），以及数据池 (Data Pool) 高维记忆库检索与双智能体工业级提示词自审流水线。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
